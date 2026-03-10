@@ -2,7 +2,7 @@ import { GoogleGenAI, Type } from "@google/genai";
 import { RoutineDetail } from "../types";
 import { getSlug } from "../data";
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || "" });
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY || "" });
 
 export async function getRoutineDetail(routineName: string): Promise<RoutineDetail> {
   const slug = getSlug(routineName);
