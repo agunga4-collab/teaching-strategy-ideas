@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { GoogleGenAI } from '@google/genai';
 import { CATEGORIES, Routine, Category } from './data';
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || '' });
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY || '' });
 
 type View = 'home' | 'category' | 'routine' | 'ask';
 
