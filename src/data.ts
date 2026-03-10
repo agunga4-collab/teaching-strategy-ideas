@@ -270,3 +270,11 @@ export const getRoutineBySlug = (slug: string): { routine: Routine; category: Ca
   }
   return null;
 };
+
+export const getSlug = (name: string): string => {
+  for (const cat of CATEGORIES) {
+    const routine = cat.routines.find(r => r.name === name);
+    if (routine) return routine.slug;
+  }
+  return name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+};
