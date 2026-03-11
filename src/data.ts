@@ -260,6 +260,20 @@ export const CATEGORIES: Category[] = [
       r('Unveiling Stories', 'unveiling-stories', 'Ungkap cerita tersembunyi.', ['Amati', 'Cerita apa?', 'Mengapa penting?']),
       r('Values Identities Actions', 'values-identities-actions', 'Nilai, identitas, aksi.', ['VALUES', 'IDENTITIES', 'ACTIONS'])
     ]
+  },
+  {
+    id: 'interactive-learning',
+    name: 'Interactive Learning Structures',
+    icon: '🤝',
+    color: 'cyan',
+    routines: [
+      r('Inside-Outside Circles', 'inside-outside-circles', 'Struktur berpasangan di mana siswa membentuk 2 lingkaran (dalam & luar), saling berhadapan, berbagi jawaban, lalu rotasi ke partner baru setelah timer berbunyi.', ['Sampaikan tujuan belajar', 'Bentuk kelas jadi 2 kelompok besar', 'Kelompok 1 lingkaran dalam, kelompok 2 lingkaran luar, berdiri saling berhadapan', 'Berikan 1 pertanyaan, berikan waktu siswa berpikir', 'Siswa saling berbagi jawabannya ke siswa di hadapannya', 'Setelah timer berbunyi, siswa kelompok luar bergeser menghadap ke siswa selanjutnya']),
+      r('Quiz Trade', 'quiz-trade', 'Siswa membuat kartu pertanyaan, berkeliling kelas untuk saling bertanya-jawab dengan partner, lalu menukar kartu dan mencari partner baru.', ['Sampaikan tujuan belajar', 'Bagikan siswa beberapa lembar kertas, potong menjadi setengah ukuran A4, minimal 3 buah', 'Lipat 2 kertas tersebut sebagai kartu - bagian luar tulis pertanyaan, bagian dalam adalah kunci jawabannya', 'Siswa berkeliling kelas, temukan 1 orang untuk diberikan pertanyaan yang kita miliki', 'Jika sudah saling bertanya, tukar kartu dan cari partner lain']),
+      r('Swap Meet', 'swap-meet', 'Siswa menjawab pertanyaan open-ended secara individu, lalu berkeliling mengumpulkan jawaban dari partner-partner berbeda, dan sharing hasilnya di lingkaran.', ['Sampaikan tujuan belajar', 'Berikan pertanyaan open-ended, berikan siswa waktu untuk menjawab secara individu', 'Tuliskan jawaban di selembar kertas, tuliskan no 1 pada jawaban siswa tersebut', 'Sinyal siswa untuk mencari 1 partner dan dengarkan jawaban mereka', 'Tambahkan jawaban teman tersebut sebagai no 2, dapatkan partner lain dan tuliskan jawabannya sebagai no 3', 'Setelah selesai, berkumpul dalam lingkaran dan berbagi hasil swap meet-nya']),
+      r('Four Corners', 'four-corners', 'Guru memberikan pertanyaan dengan 4 kemungkinan jawaban, setiap pojok kelas mewakili 1 jawaban, siswa memilih pojok lalu berdiskusi dengan kelompok yang memilih jawaban sama.', ['Sampaikan tujuan belajar', 'Berikan pertanyaan yang memiliki 4 kemungkinan jawaban', 'Tentukan 4 sudut ruangan, berikan nama sesuai 4 respon pada masing-masing pojok kelas', 'Berikan waktu berpikir, sediakan waktu bagi siswa menjawab dan memilih pojok mana yang sesuai', 'Siswa diskusi pertanyaan bersama teman-temannya yang memiliki respon sejenis']),
+      r('The Last Word', 'the-last-word', 'Kelompok kecil dengan perekam dan presenter bekerja sama mengembangkan kata-kata dari huruf awal sebuah kata kunci, lalu presenter membagikan hasil ke kelas.', ['Sampaikan tujuan belajar', 'Bentuk kelompok kecil dan bagi tugas, ada yang sebagai perekam dan presenter', 'Tuliskan 1 contoh kata di papan tulis', 'Minta siswa tulis 1 kata pilihan mereka (atau ditentukan guru), tulis memanjang ke bawah', 'Berikan waktu berpikir - tuliskan 1 kata yang diawali oleh setiap huruf di kata yang dipilih di awal, recorder yang mencatat semua', 'Nyalakan timer - setelah selesai, presenter membagikan hasil diskusi kelompok di depan kelas dan menjelaskan masing-masing kata tersebut']),
+      r('Maitre D', 'maitre-d', 'Guru memberikan pertanyaan open-ended, lalu mengatur ukuran kelompok secara dinamis dengan call out "Table for three", "Table for four", dst untuk mendiskusikan pertanyaan berbeda.', ['Sampaikan tujuan belajar', 'Berikan 1 pertanyaan yang bersifat open-ended', 'Call out: "Table for three" - siswa berkelompok dengan 3 orang dan diskusi jawaban dengan grup kecil tersebut', 'Call out: "Table for four" - siswa bergerak lagi dan berikan pertanyaan lain untuk didiskusikan', 'Continue - ulangi beberapa kali dengan angka yang berbeda-beda'])
+    ]
   }
 ];
 
