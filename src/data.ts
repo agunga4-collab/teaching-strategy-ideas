@@ -267,16 +267,114 @@ export const ILS_CATEGORY: Category = {
   id: 'interactive-learning',
   name: 'Interactive Learning Structures',
   icon: '🤝',
-  color: 'cyan',
+  color: 'teal',
   routines: [
-        r('Inside-Outside Circles / Parallel Lines', 'inside-outside-circles', 'Siswa membentuk 2 lingkaran (dalam dan luar) atau 2 barisan berhadapan dan berbagi jawaban saling bergantian, lalu berrotasi ke partner baru. Format: Berpasangan. Waktu: 10-15 menit. Keterampilan: Komunikasi, mendengarkan aktif, memperkuat pemahaman materi.', ['Sampaikan tujuan belajar', 'Bagi kelas menjadi 2 kelompok: satu membentuk lingkaran dalam, yang lain lingkaran luar (atau 2 baris berhadapan)', 'Siswa saling berhadapan dengan pasangannya', 'Berikan 1 pertanyaan, beri waktu berpikir', 'Siswa berbagi jawaban dengan pasangan di hadapannya bergantian', 'Setelah timer berbunyi, siswa lingkaran luar bergeser satu langkah ke pasangan berikutnya', 'Ulangi dengan pertanyaan baru']),
-    r('Quiz Trade', 'quiz-trade', 'Setiap siswa membuat kartu kuis, berkeliling untuk saling bertanya-jawab berpasangan, lalu menukar kartu dan mencari partner baru. Format: Berpasangan. Waktu: 10-15 menit. Keterampilan: Brainstorming, mendengarkan, mencari informasi, merangkum.', ['Sampaikan tujuan belajar', 'Bagikan beberapa lembar kertas kepada siswa, potong menjadi setengah ukuran A4 (minimal 3 kartu)', 'Siswa membuat kartu kuis: bagian depan tulis pertanyaan, bagian dalam tuliskan kunci jawaban', 'Siswa berkeliling kelas dan menemukan 1 partner', 'Quiz: berikan pertanyaan dari kartu yang dimiliki kepada partner', 'Jika sudah saling bertanya-jawab, tukar kartu dan cari partner lain', 'Ulangi prosesnya']),
-    r('Swap Meet', 'swap-meet', 'Siswa menjawab pertanyaan open-ended secara individu, berkeliling mengumpulkan jawaban dari berbagai partner, lalu berbagi hasilnya di lingkaran bersama. Format: Berpasangan. Waktu: 10-15 menit. Keterampilan: Brainstorming, penalaran, tetap fokus, merangkum.', ['Sampaikan tujuan belajar', 'Berikan pertanyaan open-ended, beri siswa waktu menjawab secara individu', 'Siswa menuliskan jawaban di selembar kertas, beri nomor 1 pada jawaban pertama mereka', 'Beri sinyal siswa untuk mencari 1 partner dan dengarkan jawaban partner tersebut', 'Tambahkan jawaban partner sebagai nomor 2 di kertas mereka, lalu cari partner lain dan tulis jawabannya sebagai nomor 3', 'Setelah selesai, berkumpul dalam lingkaran besar dan berbagi hasil swap meet']),
-    r('Debate Duos', 'debate-duos', 'Siswa berdebat dua sisi argumen secara berpasangan untuk mempertimbangkan berbagai perspektif, lalu bertukar posisi dan berganti partner. Format: Berpasangan. Waktu: 10-15 menit. Keterampilan: Setuju dan tidak setuju dengan hormat, membuat inferensi, penalaran, berargumentasi.', ['Sampaikan tujuan belajar dan rumuskan isu debat, contoh: Apakah upah minimum harus dinaikkan?', 'Ajarkan strategi tetap fokus dan pengendalian diri seperti mendengarkan dengan seksama dan menunggu giliran berbicara', 'Pasangkan siswa dan tentukan peran: Posisi A (pro/mendukung) dan Posisi B (kontra/menentang)', 'Beri siswa 3-5 menit menyiapkan argumen dan bukti untuk posisi masing-masing', 'Posisi A berbicara 30 detik tanpa interupsi, lalu Posisi B berbicara 30 detik, bergantian minimal 2 kali', 'Siswa memperbarui catatan dengan informasi yang dipelajari, bertukar posisi, dan ulangi dengan partner baru']),
-    r('Four Corners', 'four-corners', 'Guru mengajukan pertanyaan dengan 4 kemungkinan jawaban, setiap sudut ruangan mewakili satu jawaban. Siswa memilih sudut yang mewakili pendapat mereka lalu berdiskusi dalam kelompok. Format: Kelompok Kecil. Waktu: 5-10 menit (1 atau 4 ronde). Keterampilan: Setuju dan tidak setuju dengan hormat, penalaran, menyuarakan pendapat.', ['Sampaikan tujuan belajar', 'Ajukan pertanyaan yang memiliki 4 kemungkinan jawaban atau respons', 'Tentukan 4 sudut ruangan, beri nama sesuai 4 respons pada masing-masing pojok', 'Beri siswa waktu merefleksikan pilihan mereka, lalu bergerak ke sudut yang sesuai', 'Di sudut masing-masing, siswa mendiskusikan dalam kelompok kecil (atau berpasangan) mengapa mereka memilih jawaban itu dan memberikan alasan serta bukti', 'Beri setiap orang sekitar 30 detik untuk berbagi, atau 1-2 menit untuk diskusi lebih bebas', 'Ulangi dengan pertanyaan baru sesuai waktu yang tersedia']),
-    r('The Last Word', 'the-last-word', 'Kelompok kecil dengan perekam dan presenter mengembangkan kata-kata berasosiasi dari setiap huruf sebuah kata kunci, lalu mempresentasikan hasilnya ke kelas. Format: Kelompok Kecil. Waktu: 5-10 menit. Keterampilan: Brainstorming, berpikir kreatif, berbicara di depan umum, merangkum, sintesis.', ['Sampaikan tujuan belajar, contoh: kembangkan kata-kata terkait geometri dari kata kunci', 'Bentuk kelompok kecil dan bagi tugas: ada yang menjadi perekam dan presenter', 'Tuliskan 1 contoh kata kunci di papan tulis', 'Minta siswa menulis 1 kata pilihan mereka atau yang ditentukan guru, tulis secara vertikal ke bawah', 'Beri waktu berpikir: tuliskan 1 kata yang diawali oleh setiap huruf dari kata kunci tersebut yang berhubungan dengan topik, perekam mencatat semua ide', 'Nyalakan timer, setelah selesai presenter membagikan hasil diskusi kelompok di depan kelas dan menjelaskan setiap kata']),
-    r('Jigsaws', 'jigsaws', 'Untuk mendalami konten, siswa bekerja dalam kelompok kecil menjadi ahli dalam satu aspek topik, lalu berbagi pengetahuan mereka di kelompok jigsaw campuran. Format: Kelompok Kecil. Waktu: 15-30 menit (tergantung konten). Keterampilan: Bertukar pikiran, tetap fokus, merangkum, sintesis.', ['Sampaikan tujuan belajar, contoh: mengeksplorasi berbagai perspektif tentang formasi batuan', 'Bagi siswa secara merata ke dalam kelompok ahli dan tentukan peran: setiap kelompok membaca artikel/bagian yang berbeda dan mendiskusikannya', 'Beri kelompok 5 menit untuk membaca artikel dan 5 menit lagi menyepakati ide-ide kunci, tuliskan di lembar kerja Jigsaws', 'Anggota setiap kelompok ahli berhitung: semua nomor satu membentuk kelompok jigsaw baru, begitu juga yang lain', 'Dalam kelompok jigsaw, setiap siswa berbagi ide-ide kunci dari artikel mereka dan mencatat informasi baru di lembar kerja', 'Sebagai kelas, rangkum ide-ide kunci dari setiap artikel untuk memastikan semua siswa memahami keseluruhan konten']),
-    r('Maitre D', 'maitre-d', 'Guru mengajukan pertanyaan open-ended, lalu mengatur ukuran kelompok secara dinamis dengan memanggil meja untuk beberapa orang, sehingga siswa berpindah-pindah kelompok mendiskusikan pertanyaan yang berbeda. Format: Kelompok Kecil. Waktu: 10-15 menit. Keterampilan: Komunikasi, mendengarkan aktif, memperluas perspektif.', ['Sampaikan tujuan belajar', 'Berikan 1 pertanyaan yang bersifat open-ended', 'Panggil: Meja untuk tiga (Table for three) - siswa berkelompok 3 orang dan diskusikan pertanyaan tersebut', 'Panggil: Meja untuk empat (Table for four) - siswa bergerak lagi membentuk kelompok baru dan berikan pertanyaan berbeda untuk didiskusikan', 'Ulangi beberapa kali dengan ukuran kelompok yang berbeda-beda'])
+    r(
+      'Debate Duos',
+      'debate-duos',
+      'Siswa berdebat dua sisi argumen secara berpasangan untuk mempertimbangkan berbagai perspektif, lalu bertukar posisi dan berganti partner. Format: Berpasangan | Waktu: 10-15 menit | Keterampilan: Setuju dan tidak setuju dengan hormat, membuat inferensi, penalaran, berargumentasi | Variasi: Kelompok empat orang (2 posisi A, 2 posisi B).',
+      [
+        'Sampaikan tujuan belajar dan rumuskan isu debat yang jelas',
+        'Ajarkan strategi tetap fokus dan pengendalian diri: mendengarkan dengan seksama dan menunggu giliran berbicara',
+        'Pasangkan siswa dan tentukan peran: Posisi A (pro/mendukung) dan Posisi B (kontra/menentang)',
+        'Beri siswa 3-5 menit untuk menyiapkan argumen dan bukti sesuai posisi masing-masing',
+        'Posisi A berbicara 30 detik tanpa interupsi, lalu Posisi B berbicara 30 detik — ulangi minimal 2 kali bergantian',
+        'Siswa memperbarui lembar kerja dengan informasi yang dipelajari, lalu bertukar posisi dan ulangi dengan partner baru'
+      ]
+    ),
+    r(
+      'Quiz Trade',
+      'quiz-trade',
+      'Setiap siswa membuat kartu kuis, lalu berkeliling untuk saling bertanya-jawab secara berpasangan, menukar kartu, dan mencari partner baru. Format: Berpasangan | Waktu: 10-15 menit | Keterampilan: Brainstorming, penalaran, merangkum, sintesis | Variasi: Siswa membuat pernyataan benar/salah atau pilihan ganda dengan jawaban dan alasannya di bagian belakang.',
+      [
+        'Sampaikan tujuan belajar',
+        'Bagikan kertas kepada siswa — minta siswa membuat minimal 3 kartu kuis: bagian depan tulis pertanyaan, bagian belakang tulis kunci jawaban',
+        'Ingatkan siswa tentang keterampilan komunikasi yang efektif: bagaimana mengajukan pertanyaan yang jelas dan ringkas',
+        'Siswa berkeliling kelas dan menemukan 1 partner untuk berpasangan',
+        'Partner A membacakan pertanyaan dari kartu, Partner B menjawab, lalu bergantian — beri waktu 1-2 menit per diskusi',
+        'Ketika waktu habis, siswa bertukar kartu dan mencari partner baru — ulangi prosesnya',
+        'Di akhir, ajak beberapa siswa berbagi satu hal menarik yang mereka pelajari dari diskusi'
+      ]
+    ),
+    r(
+      'Swap Meet',
+      'swap-meet',
+      'Siswa menjawab pertanyaan open-ended secara mandiri, lalu berkeliling mengumpulkan ide dari berbagai partner, dan berbagi hasilnya bersama kelas. Format: Berpasangan | Waktu: 10-15 menit | Keterampilan: Brainstorming, penalaran, tetap fokus, merangkum.',
+      [
+        'Sampaikan tujuan belajar',
+        'Ajukan pertanyaan open-ended yang relevan dengan materi',
+        'Siswa bekerja secara mandiri untuk menjawab pertanyaan dan menuliskan ide mereka di lembar kerja Swap Meet — beri nomor 1 pada jawaban pertama mereka',
+        'Setelah beberapa menit, beri sinyal siswa untuk mencari 1 partner dan mendengarkan jawaban partner tersebut — catat sebagai nomor 2',
+        'Siswa mencari partner lain dan menambahkan ide baru dari partner tersebut — tulis sebagai nomor 3 (dan seterusnya)',
+        'Kumpulkan seluruh kelas dalam lingkaran besar dan ajak beberapa siswa berbagi satu solusi atau ide dari hasil Swap Meet'
+      ]
+    ),
+    r(
+      'Inside-Outside Circles / Parallel Lines',
+      'inside-outside-circles',
+      'Siswa membentuk 2 lingkaran konsentris (dalam dan luar) atau 2 barisan berhadapan, saling berbagi jawaban secara bergantian, lalu berrotasi ke partner baru. Format: Berpasangan | Waktu: 8-12 menit (3 atau 4 ronde) | Keterampilan: Penalaran, tetap fokus, merangkum, menyuarakan pendapat | Variasi: Siswa membuat pertanyaan atau topik sendiri untuk setiap ronde.',
+      [
+        'Sampaikan tujuan belajar',
+        'Minta siswa berhitung 1 dan 2: kelompok 1 membentuk lingkaran dalam menghadap ke luar, kelompok 2 membentuk lingkaran luar menghadap ke dalam (atau berdiri dalam 2 barisan berhadapan) — setiap siswa harus berhadapan dengan 1 pasangan',
+        'Ajukan pertanyaan atau topik diskusi dan beri siswa waktu berpikir sejenak',
+        'Pasangan berbagi jawaban secara bergantian — batasi waktu 1-2 menit total untuk diskusi bolak-balik',
+        'Siswa di lingkaran luar bergeser satu langkah ke kiri untuk membentuk pasangan baru (atau siswa di barisan bergeser satu posisi — ingatkan untuk menjaga ruang pribadi saat berpindah)',
+        'Pasangan baru mendiskusikan pertanyaan yang sama atau pertanyaan baru yang diajukan guru — ulangi 3-4 ronde'
+      ]
+    ),
+    r(
+      'Maitre D',
+      'maitre-d',
+      'Guru mengajukan pertanyaan open-ended, lalu mengatur ukuran kelompok secara dinamis dengan memanggil ukuran meja, sehingga siswa berpindah-pindah kelompok dan mendiskusikan berbagai pertanyaan. Format: Kelompok Kecil | Waktu: 7-10 menit | Keterampilan: Penalaran, tetap fokus, menyuarakan pendapat | Variasi: Gunakan aktivitas ini untuk membangun komunitas dengan mendiskusikan favorit seperti buku, film, atau hobi.',
+      [
+        'Sampaikan tujuan belajar',
+        'Ingatkan siswa tentang harapan saat membentuk kelompok baru: inklusif, ramah, dan penuh rasa hormat',
+        'Panggil: Meja untuk dua (Table for two) — siswa dengan cepat berpasangan membentuk kelompok 2 orang pilihan sendiri (satu meja boleh 3 orang jika dibutuhkan)',
+        'Ajukan pertanyaan untuk difokuskan dalam diskusi — beri siswa 1-2 menit berbagi (dengan peringatan 15 detik)',
+        'Panggil: Meja untuk tiga (Table for three) — siswa membentuk kelompok baru dan diskusikan pertanyaan yang sama atau yang baru. Lanjutkan dengan Meja untuk empat (Table for four) dst.',
+        'Akhiri dengan mengumpulkan seluruh kelas dan ajak beberapa siswa berbagi highlight dari diskusi mereka'
+      ]
+    ),
+    r(
+      'The Last Word',
+      'the-last-word',
+      'Kelompok kecil mengembangkan kata-kata atau frasa yang berasosiasi dengan setiap huruf dari sebuah kata kunci terkait topik, lalu mempresentasikan hasilnya ke kelas. Format: Kelompok Kecil | Waktu: 5-10 menit | Keterampilan: Brainstorming, berpikir kreatif, berbicara di depan umum, merangkum, sintesis | Variasi: Setiap kelompok memilih sendiri kata kunci untuk topik tersebut. Bisa dilakukan sebagai aktivitas kelas penuh.',
+      [
+        'Sampaikan tujuan belajar — contoh: kembangkan kata-kata terkait geometri dari sebuah kata kunci',
+        'Bentuk kelompok kecil dan bagi peran: perekam (mencatat semua ide) dan presenter (mempresentasikan hasil)',
+        'Tulis 1 contoh kata kunci di papan tulis — contoh: GEOMETRY',
+        'Minta setiap kelompok memilih atau menerima kata kunci mereka, lalu tulis secara vertikal ke bawah di kertas atau papan interaktif',
+        'Nyalakan timer: setiap kelompok menulis 1 kata atau frasa yang dimulai dengan setiap huruf dari kata kunci tersebut, yang berhubungan dengan topik. Perekam mencatat semua ide kelompok',
+        'Setelah waktu habis, presenter masing-masing kelompok mempresentasikan hasilnya di depan kelas — diskusikan kata-kata terkait yang belum masuk dalam daftar'
+      ]
+    ),
+    r(
+      'Jigsaws',
+      'jigsaws',
+      'Untuk mendalami konten, siswa bekerja dalam kelompok ahli untuk mempelajari satu aspek topik secara mendalam, lalu berbagi pengetahuan mereka di kelompok jigsaw yang bercampur. Format: Kelompok Kecil | Waktu: 15-30 menit (tergantung konten) | Keterampilan: Bertukar pikiran, tetap fokus, merangkum, sintesis.',
+      [
+        'Sampaikan tujuan belajar — contoh: mengeksplorasi berbagai perspektif tentang formasi batuan',
+        'Bagi siswa secara merata ke dalam kelompok ahli dan tentukan fasilitator per kelompok — setiap kelompok membaca artikel atau bagian konten yang berbeda. Ingatkan harapan: dengarkan ide satu sama lain dengan penuh rasa hormat',
+        'Beri kelompok 5 menit untuk membaca artikel dan 5 menit lagi untuk menyepakati ide-ide kunci serta menuliskannya di lembar kerja Jigsaws',
+        'Anggota setiap kelompok ahli berhitung: semua nomor satu membentuk kelompok jigsaw baru, semua nomor dua juga, dst. — setiap kelompok jigsaw memiliki ahli dari setiap artikel',
+        'Dalam kelompok jigsaw, setiap siswa berbagi ide-ide kunci dari artikel mereka dan mencatat informasi baru di lembar kerja — guru mengingatkan: pastikan ada waktu untuk pertanyaan dan komentar',
+        'Sebagai kelas, rangkum ide-ide kunci dari setiap artikel untuk memastikan semua siswa memahami keseluruhan konten'
+      ]
+    ),
+    r(
+      'Four Corners',
+      'four-corners',
+      'Guru mengajukan pertanyaan dengan 4 kemungkinan jawaban, setiap sudut ruangan mewakili satu jawaban. Siswa memilih sudut yang mewakili pendapat mereka, lalu berdiskusi dan berbagi alasan. Format: Kelompok Kecil | Waktu: 5-10 menit (3 atau 4 ronde) | Keterampilan: Setuju dan tidak setuju dengan hormat, penalaran, menyuarakan pendapat.',
+      [
+        'Sampaikan tujuan belajar',
+        'Ajukan pertanyaan yang memiliki 4 kemungkinan jawaban atau respons',
+        'Tentukan 4 sudut ruangan dan beri nama sesuai 4 respons pada masing-masing pojok',
+        'Beri siswa waktu untuk merefleksikan pilihan mereka, lalu bergerak ke sudut yang sesuai dengan pilihan mereka',
+        'Di sudut masing-masing, siswa mendiskusikan dalam kelompok kecil (atau berpasangan) mengapa mereka memilih jawaban tersebut dan memberikan alasan serta bukti',
+        'Beri setiap orang sekitar 30 detik untuk berbagi, atau 1-2 menit untuk diskusi lebih bebas dengan peringatan 10 detik',
+        'Ulangi dengan pertanyaan dan respons baru sesuai waktu yang tersedia'
+      ]
+    )
   ]
 };
 
