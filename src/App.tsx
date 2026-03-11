@@ -81,7 +81,7 @@ export default function App() {
               </div>
               <div className="text-left">
                 <h1 className="text-white font-bold text-base leading-tight">Teaching Strategy Ideas</h1>
-                <p className="text-indigo-200 text-[11px] leading-tight">Visible Thinking Routines</p>
+                <p className="text-indigo-200 text-[11px] leading-tight">Lazuardi GCS</p>
               </div>
             </button>
             {/* Nav Buttons */}
