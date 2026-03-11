@@ -180,7 +180,6 @@ export default function App() {
                 if (isILS && desc.includes(' | ')) {
                   const parts = desc.split(' | ');
                   const mainDesc = parts[0].replace(/\. Format: .*$/, '').replace(/ Format: .*$/, '');
-                  const meta: Record<string,string> = {};
                   const fullText = desc;
                   const formatMatch = fullText.match(/Format: ([^|]+?)(?:\s*\||$)/);
                   const waktuMatch = fullText.match(/Waktu: ([^|]+?)(?:\s*\||$)/);
