@@ -174,7 +174,56 @@ export default function App() {
                 <div className={`p-1 ${headerColorMap[selectedCategory.color] || 'bg-gray-500'}`}></div>
                 <div className="p-6">
                   <h2 className="text-2xl font-bold text-stone-800 mb-4">{selectedRoutine.name}</h2>
-                  <p className="text-stone-600 mb-6 leading-relaxed">{selectedRoutine.description}</p>
+                  {(() => {
+                const desc = selectedRoutine.description;
+                const isILS = selectedCategory.id === 'interactive-learning';
+                if (isILS && desc.includes(' | ')) {
+                  const parts = desc.split(' | ');
+                  const mainDesc = parts[0].replace(/\. Format: .*$/, '').replace(/ Format: .*$/, '');
+                  const meta: Record<string,string> = {};
+                  const fullText = desc;
+                  const formatMatch = fullText.match(/Format: ([^|]+?)(?:\s*\||$)/);
+                  const waktuMatch = fullText.match(/Waktu: ([^|]+?)(?:\s*\||$)/);
+                  const keterampilanMatch = fullText.match(/Keterampilan: ([^|]+?)(?:\s*\||$)/);
+                  const variasiMatch = fullText.match(/Variasi: ([^|]+?)(?:\s*\||$)/);
+                  return (
+                    <div className="mb-6">
+                      <p className="text-stone-600 leading-relaxed mb-4">{mainDesc}</p>
+                      <div className="grid grid-cols-2 gap-3 mb-3">
+                        {formatMatch && (
+                          <div className="bg-teal-50 border border-teal-200 rounded-lg p-3">
+                            <div className="text-xs font-bold text-teal-700 uppercase tracking-wider mb-1">👥 Format</div>
+                            <div className="text-sm text-teal-800">{formatMatch[1].trim()}</div>
+                          </div>
+                        )}
+                        {waktuMatch && (
+                          <div className="bg-amber-50 border border-amber-200 rounded-lg p-3">
+                            <div className="text-xs font-bold text-amber-700 uppercase tracking-wider mb-1">⏰ Waktu</div>
+                            <div className="text-sm text-amber-800">{waktuMatch[1].trim()}</div>
+                          </div>
+                        )}
+                      </div>
+                      {keterampilanMatch && (
+                        <div className="bg-indigo-50 border border-indigo-200 rounded-lg p-3 mb-3">
+                          <div className="text-xs font-bold text-indigo-700 uppercase tracking-wider mb-2">🎯 Keterampilan</div>
+                          <div className="flex flex-wrap gap-1.5">
+                            {keterampilanMatch[1].split(',').map((s, i) => (
+                              <span key={i} className="inline-block bg-indigo-100 text-indigo-700 text-xs px-2 py-1 rounded-full">{s.trim()}</span>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                      {variasiMatch && (
+                        <div className="bg-purple-50 border border-purple-200 rounded-lg p-3">
+                          <div className="text-xs font-bold text-purple-700 uppercase tracking-wider mb-1">💡 Variasi</div>
+                          <div className="text-sm text-purple-800">{variasiMatch[1].trim()}</div>
+                        </div>
+                      )}
+                    </div>
+                  );
+                }
+                return <p className="text-stone-600 mb-6 leading-relaxed">{desc}</p>;
+              })()}
                   {selectedCategory.id !== 'interactive-learning' && (
                     <a href={`https://pz.harvard.edu/resources/${selectedRoutine.slug}`} target="_blank" rel="noopener noreferrer" className="inline-block mb-6 px-4 py-2 bg-stone-800 text-white rounded-lg hover:bg-stone-700 text-sm">Project Zero Source ↗</a>
                   )}
