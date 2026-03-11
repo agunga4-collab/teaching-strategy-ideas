@@ -55,7 +55,7 @@ export default function App() {
       const prompt = `Kamu adalah konsultan pendidikan ahli strategi pengajaran (Visible Thinking Routines dari Harvard Project Zero dan Interactive Learning Structures dari Responsive Classroom). Guru bertanya:\n\n"${question}"\n\nDaftar routine: ${allRoutineNames}\n\nRekomendasikan 2-3 routine PALING COCOK. Untuk setiap routine: 1) Nama, 2) Mengapa cocok (1-2 kalimat), 3) Contoh penerapan singkat. Jawab Bahasa Indonesia, singkat dan praktis.`;
       const response = await ai.models.generateContent({ model: 'gemini-2.5-flash-lite', contents: prompt });
       setAiAnswer(response.text || 'Tidak ada jawaban.');
-                } catch (e: any) { console.error('AI Error:', e); setAiAnswer(`Maaf, terjadi kesalahan. Detail: ${e?.message || e}`); }
+                    } catch (e: any) { console.error('AI Error:', e); setAiAnswer('Maaf, terjadi kesalahan saat menghubungi AI. Silakan coba lagi.'); }
     setLoading(false);
   };
 
