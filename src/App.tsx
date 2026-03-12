@@ -62,22 +62,22 @@ export default function App() {
   return (
     <div className="min-h-screen bg-stone-50 font-sans">
       <header className="bg-white border-b border-stone-200 sticky top-0 z-10">
-        <div className="container mx-auto max-w-4xl px-4 py-3 flex items-center justify-between">
+        <div className="container mx-auto max-w-4xl px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2 cursor-pointer" onClick={goHome}>
-            <span className="text-2xl">✔️</span>
+            <span className="text-3xl">✔️</span>
             <div>
-              <h1 className="font-bold text-lg text-stone-800">Teaching Strategy Ideas</h1>
-              <p className="text-xs text-stone-500">Explore teaching strategies for your classroom</p>
+              <h1 className="font-bold text-xl text-stone-800">Teaching Strategy Ideas</h1>
+              <p className="text-sm text-stone-500">Explore teaching strategies for your classroom</p>
             </div>
           </div>
           <div className="flex gap-2">
-            <button onClick={goHome} className={`px-3 py-1.5 rounded-lg text-sm font-medium transition ${view !== 'ask' ? 'bg-stone-800 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'}`}>📚 Jelajahi</button>
-            <button onClick={goAsk} className={`px-3 py-1.5 rounded-lg text-sm font-medium transition ${view === 'ask' ? 'bg-stone-800 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'}`}>🤖 Tanya AI</button>
+            <button onClick={goHome} className={`px-5 py-2.5 rounded-xl text-base font-semibold shadow-sm transition ${view !== 'ask' ? 'bg-stone-800 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'}`}>📚 Jelajahi</button>
+            <button onClick={goAsk} className={`px-5 py-2.5 rounded-xl text-base font-semibold shadow-sm transition ${view === 'ask' ? 'bg-stone-800 text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'}`}>🤖 Tanya AI</button>
           </div>
         </div>
       </header>
 
-      <div className="container mx-auto max-w-4xl px-4 py-2 text-sm text-stone-500">
+      <div className="container mx-auto max-w-4xl px-4 py-3 text-base text-stone-500 font-medium">
         <span className="cursor-pointer hover:text-stone-700" onClick={goHome}>Beranda</span>
         {view === 'ask' && <><span className="mx-1">&gt;</span><span className="text-stone-700">Tanya AI</span></>}
         {selectedCategory && <><span className="mx-1">&gt;</span><span className="cursor-pointer hover:text-stone-700" onClick={() => { setView('category'); setSelectedRoutine(null); window.scrollTo(0,0); }}>{selectedCategory.name}</span></>}
